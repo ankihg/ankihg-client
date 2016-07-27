@@ -1,0 +1,53 @@
+#nav-menu {
+  color: red;
+  font-family: "Times New Roman", Times, serif;
+}
+#nav-menu .image {
+  position: relative;
+  /*width: 90%;*/
+  /*height: 90%;*/
+  margin-top: 5%;
+  max-width: 30%;
+  max-height: 90%;
+}
+#nav-menu .image img {
+  padding-top: 5%;
+  /*max-width: 100%;*/
+  /*width:30%;*/
+  width: 30%;
+}
+#nav-menu h5 {
+  position: absolute;
+  text-align: center;
+  padding-top: 5%;
+  top: 10%;
+  left: -5%;
+  width: 100%;
+  pointer-events: inherit;
+}
+#nav-menu .flag {
+  display: none;
+  position: absolute;
+  margin-top: 4%;
+  top: -480%;
+  left: 32%;
+  width: 25%;
+  max-height: 400%;
+  height: 400%;
+  pointer-events: inherit;
+}
+
+#min-nav-menu {
+  display: none;
+}
+#min-nav-menu img {
+  display: inline;
+  width: 7%;
+  height: 7%;
+}
+#min-nav-menu .flag {
+  display: none;
+}
+.min-menu-button {
+  margin-left: 5%;
+}

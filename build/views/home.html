@@ -1,0 +1,110 @@
+<section id="home" data-ng-init="homeCtrl.setUp()">
+  <script src="../vendors/jquery.simpleWeather.js"></script>
+
+  <div id="canvasWrap">
+  </div>
+
+  <canvas id="backgroundColorBox">
+  </canvas>
+
+  <div class="box1" id="background">
+   <div id="title">
+   <h1>ANNIKA HAGELIN</h1>
+   <h2>SOFTWARE DEVELOPER</h2>
+   </div>
+  </div>
+
+  <canvas id="nightCanvas"">
+   </canvas>
+
+  <canvas id="rainCanvas"">
+  <span id="rainCanvas">
+   </span>
+   </canvas>
+
+  <canvas id="riverCanvas" data-ng-click="homeCtrl.fishJump()">
+  <span id="riverCanvas">
+   </span>
+   </canvas>
+
+  <! project peak>
+  <div class="flag-box">
+   <span id="demo2">
+
+   </span>
+  </div>
+
+  <a data-ng-mouseenter="homeCtrl.enterMouse('demo2')" data-ng-click="homeCtrl.toProfessional()" data-ng-mouseenter="homeCtrl.enterMouse('demo2')" data-ng-mouseleave="homeCtrl.exitMouse('demo2')">
+  <div class="box-link">
+  <span id="demo">
+   <p>project </br> &nbsp; &nbsp; peak</p>
+   </span>
+   </div>
+  </a>
+
+  <! resume ridge>
+  <div class="flag-box2">
+   <span id="demo3">
+
+   </span>
+  </div>
+
+  <a href="http://ankihg.ucoz.com/AnnikaHagelinResume_online.pdf" target="_blank" data-ng-mouseenter="homeCtrl.enterMouse('demo3')" data-ng-mouseleave="homeCtrl.exitMouse('demo3')">
+  <div class="box-link2">
+  <span id="demo">
+   <p>resume </br> ridge</p>
+   </span>
+   </div>
+  </a>
+
+  <! linked in>
+  <div class="flag-box3">
+   <span id="demo4">
+
+   </span>
+  </div>
+
+  <a href="https://www.linkedin.com/pub/annika-hagelin/ab/949/a8b" target="_blank" data-ng-mouseenter="homeCtrl.enterMouse('demo4')" data-ng-mouseleave="homeCtrl.exitMouse('demo4')">
+  <div class="box-link3">
+  <span id="demo">
+   <p>linked </br> &nbsp; &nbsp; &nbsp; &nbsp; mt.in</p>
+   </span>
+   </div>
+  </a>
+
+  <! contact cliff>
+  <div class="flag-box4">
+   <span id="demo5">
+
+   </span>
+  </div>
+
+  <a href="mailto:hagelin.annika@gmail.com" data-ng-mouseenter="homeCtrl.enterMouse('demo5')" data-ng-mouseleave="homeCtrl.exitMouse('demo5')">
+  <div class="box-link4">
+  <span id="demo">
+   <p>contact </br> &nbsp; &nbsp; &nbsp; cliff</p>
+   </span>
+   </div>
+  </a>
+
+  <canvas id="cloudCanvas" data-ng-click="homeCtrl.addCloud();">
+  <span id="cloudCanvas">
+   plz respond
+   </span>
+   </canvas>
+
+  <canvas id="treeCanvas" data-ng-click="homeCtrl.reloadTrees(); updateTitle();">
+  <span id="treeCanvas">
+   <p id="tree-plot">plz respond</p>
+   </span>
+   </canvas>
+
+  <div id="puddleDiv" data-ng-click="homeCtrl.fishJump()">
+   </div>
+
+  <div id="puddleDiv2" data-ng-click="homeCtrl.fishJump()">
+   </div>
+
+  <div id="puddleDiv3" data-ng-click="homeCtrl.fishJump()">
+   </div>
+ </section>

@@ -1,0 +1,80 @@
+<link rel="stylesheet" type="text/css" href="./styles/vendors/bootstrap.min.css">
+<section id="professional" data-ng-init="profCtrl.getProjects()">
+<div class="container">
+ <div id="jumbo" class="jumbotron">
+<div class="row">
+<div class="col-sm-6">
+ <h1 id='name'>Annika Hagelin</h1>
+
+ <span>
+   <big>Full-stack web developer</big>
+   <a class="link" href="http://ankihg.ucoz.com/AnnikaHagelinResume_online.pdf" target="_blank"><img src="../media/tree_c.png"> Resume</a>
+   <a class="link" href="https://github.com/ankihg/" target="_blank"><img src="../media/external/github.png"> GitHub</a>
+   <a class="link" href="https://www.linkedin.com/in/annika-hagelin-a8b949ab" target="_blank"><img src="../media/external/linkedin.jpg"> LinkedIn</a>
+   <min-nav-menu />
+
+ </span>
+
+</div>
+<div class="col-sm-6">
+
+  <nav-menu style="background-color:#4597FA; background-image: url('../media/grassy.png');	background-size: cover; background-repeat: no-repeat; height: 170px; border:6px solid #000;"/>
+
+</div>
+
+</div>
+ </div>
+</div>
+
+<main>
+
+<div class='row'>
+<div id='contain-education' class="col-sm-4 box">
+  <h3><img src="../media/tree_c.png"> education <img src="../media/tree_c.png"></h3>
+  <div data-ng-repeat="education in profCtrl.education">
+    <education education={education} />
+  </div>
+</div>
+
+<div id='contain-technical-skills' class="col-sm-7 box">
+  <h3><img src="../media/mtn.png"><img src="../media/tree_c.png"> technical skills <img src="../media/mtn.png"><img src="../media/tree_c.png"></h3>
+  <ul>
+    <li type="square">Server-side: Node, Express, MongoDB, REST APIs</li>
+    <li type="square">Client-side: Angular, React, jQuery, Ajax, HTML, CSS, SMACCS, responsive web design</li>
+    <li type="square">Languages: JavaScript, Java, Python, C++, Objective-C, MATLAB, R, Haskell</li>
+    <li type="square">Testing: Mocha, Karma, Protractor</li>
+  </ul>
+</div>
+
+
+</div>
+
+<div class='row'>
+  <div id="skill-filter" class='col-sm-2 contain-checklist box'>
+     <h4><img src="../media/tree_c.png">select by skill<img src="../media/tree_c.png"></h4>
+     <ul id='tag-checklist'>
+       <!-- <div class="col-sm-6"> -->
+         <li data-ng-repeat="tag in profCtrl.tags">
+           <label for="chk1"><input type="checkbox" value="{tag}" id="{tag}" data-ng-model="tag.display" data-ng-true-value="true" data-ng-false-value="false" data-ng-change="profCtrl.setProjectsByTags()"> {{tag.tag}}</label>
+         </li>
+       <!-- </div> -->
+     </ul>
+   </div>
+
+  <section class="col-sm-9" id='projects-holder'>
+    <div data-ng-repeat="project in profCtrl.displayedProjects">
+      <project class="box" project={project} />
+    </div>
+  </section>
+</div>
+
+<span class="treeLine">
+<img data-ng-click="profCtrl.toSignin()" class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png"><img class="inlImg" src="../media/tree_c.png">
+</span>
+<span id='farewell' class="box">
+<a data-ng-click="profCtrl.toHome()">Thank you for visiting</a>
+</span>
+
+</main>
+
+</section>
